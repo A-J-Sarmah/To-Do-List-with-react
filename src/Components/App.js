@@ -31,7 +31,7 @@ export default function App() {
         for (let i = 0; i < data.length; i++) {
             localStorage.setItem(i, JSON.stringify(data[i]))
         }
-    })
+    },[data])
     function removeData(id){
         for(let i=0; i<data.length; i++){
             if(data[i].id === String(id)){
